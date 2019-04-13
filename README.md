@@ -1,3 +1,3 @@
 # Golang
 
-Assigments, PoC's and others code sample using golang.
+Assigments, PoC's and others code samples using golang.
