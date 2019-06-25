@@ -22,5 +22,14 @@ func main() {
 			zipCode: 94000,
 		},
 	}
-	fmt.Println(alex)
+	alex.setName("teste")
+	alex.toString()
+}
+
+func (p *person) setName(firstName string) {
+	(*p).firstName = firstName
+}
+
+func (p person) toString() {
+	fmt.Println(p)
 }
