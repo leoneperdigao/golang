@@ -1,29 +1,15 @@
 package main
 
-import "fmt"
-
-type bot interface {
-	getGreeting() string
-}
-
-type englishBot struct{}
-type spanishBot struct{}
-
-func printGreeting(b bot) {
-	fmt.Println(b.getGreeting())
-}
-
 func main() {
 	eb := englishBot{}
 	sb := spanishBot{}
 
+	s := square{sideLength: 10}
+	t := triangle{base: 10, height: 10}
+
 	printGreeting(eb)
 	printGreeting(sb)
-}
 
-func (englishBot) getGreeting() string {
-	return "Hi there"
-}
-func (spanishBot) getGreeting() string {
-	return "Hi there"
+	printArea(s)
+	printArea(t)
 }
